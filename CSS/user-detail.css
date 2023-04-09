@@ -1,0 +1,249 @@
+body{
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+/* PHẦN HEADER BAO GỒM PROMOTION VÀ MENU */
+#header{
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0px;
+    transition: .8s;
+    z-index: 99;
+}
+/* KẾT THÚC PHẦN HEADER BAO GỒM PROMOTION VÀ NAVBAR */
+
+/* CSS PHẦN PROMOTION TRÊN CÙNG */
+#promotion{
+    background-color: #000;
+    height: 32px;
+    display: flex;
+}
+#promotion div{
+    margin: auto;
+}
+#promotion div a{
+    color: #fff;
+    font-family: "Noto Sans","AdihausDIN","Helvetica",Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#promotion div a:hover{
+    text-decoration: underline;
+}
+/* KẾT THÚC CSS PHẦN PROMOTION TRÊN CÙNG */
+
+/* PHẦN MENU */
+#navbar{
+    background-color: #fff;
+    display: flex;
+    height: 80px;
+}
+#navbar div{
+    margin: auto;
+}
+/* #navbar-leftside{
+    
+} */
+#navbar-mid{
+    display: flex;
+}
+#navbar-mid ul{
+    display: flex;
+}
+#navbar-mid li{
+    margin-right: 40px;
+    margin-top: 20px;
+    list-style: none;
+    position: relative;
+}
+#navbar-mid>ul>li>a,#navbar-rightside>a{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+/* CSS PHẦN MENU Ở GIỮA */
+#men>#men-subnav,#women>#women-subnav, #policy>#policy-subnav{
+    background-color: #fff;
+    border-bottom: ridge silver;
+    display: none;
+    left: -40px;
+    margin-top: 26px;
+    text-align: left;
+    position: absolute;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+#men>a,#women>a,#policy>a,#about a{
+    padding-bottom: 26px;
+}
+#men:hover>a, #women:hover>a, #policy:hover>a, #about:hover>a{
+    border-bottom: solid;
+}
+#men-subnav a, #women-subnav a, #policy-subnav a{
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    font-size: 15px;
+}
+#men:hover #men-subnav, #women:hover #women-subnav, #policy:hover #policy-subnav{
+    display: block;
+}
+/* KẾT THÚC CSS PHẦN MENU Ở GIỮA */
+
+/* CSS PHẦN BÊN PHẢI THANH MENU */
+#navbar-rightside{
+    display: flex;
+    margin: auto;
+}
+#navbar-rightside a{
+    margin-right: 24px;
+}
+
+#navbar-rightside .ti-shopping-cart{
+    display: inline-block;
+    font-size: 24px;
+}
+/* #user-wrapper{
+
+} */
+#user-wrapper a{
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+#user-wrapper:hover #user{
+    display: block;
+}
+#user{
+    background-color: #fff;
+    border-bottom: ridge silver;
+    display: none;
+    margin-top: 24px;
+    position: absolute;
+    padding-bottom: 20px;
+    padding-right: 16px;
+    z-index: 1;
+    font-weight: 100;
+    list-style: none;
+    right: 70px;
+}
+#user li{
+    padding-top: 16px;
+}
+#user li:hover{
+    text-decoration: underline;
+}
+/* KẾT THÚC CSS PHẦN BÊN PHẢI THANH MENU */
+#body{
+    margin-top: 112px;
+    transition: .8s;
+}
+
+#user-information-wrapper{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 10% 30%;
+    padding: 100px 0;
+}
+/* #user-information{
+
+} */
+#user-information>label{
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+#user-information>input{
+    background-color: aliceblue;
+    margin-left: 20px;
+    float: right;
+    border: none;
+}
+#user-information>button{
+    margin: 12px 40%;
+    border: none;
+}
+#button-open-form{
+    margin-left: 40%;
+    background-color: #efefef;
+    width: 60px;
+}
+#button-close-form{
+    margin-left: 40%;
+    width: 60px;
+    background-color: #efefef;
+}
+#button-close-form:hover{
+    text-decoration: underline;
+    
+}
+#user-information a{
+    text-decoration: none;
+    color: #000;
+    padding: 6px;
+    cursor: pointer;
+}
+#user-information a:hover{
+    text-decoration: underline;
+}
+/* PHẦN FORM ĐĂNG NHẬP */
+.close{
+    display: none;
+}
+.formupdate-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.formupdate{
+    font-family: "Noto Sans","AdihausDIN","Helvetica",Arial,sans-serif;
+    background-color: white;
+    width: 30%;
+    min-height: 60%;
+    margin-top: 140px;
+    margin-left: 36%;
+    padding: 32px;
+    animation: FormLoginOpen ease 1s;
+}
+.formupdate>label{
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.formupdate>input{
+    background-color: aliceblue;
+    margin-left: 20px;
+    float: right;
+    border: none;
+}
+.formupdate>select{
+    background-color: aliceblue;
+    margin-left: 20px;
+    width: 64%;
+    float: right;
+    border: none;
+}
+.formupdate>button{
+    margin: 12px 40%;
+    border: none;
+}
+.formupdate a{
+    text-decoration: none;
+    color: #000;
+    padding: 4px;
+}
+.formupdate a:hover{
+    text-decoration: underline;
+}
